@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-     docker-registry:
+     docker-registry-csvserver:
                 image:  infracloudio/csvserver:latest
                 container_name: infracloudio-csvserver
                 ports:
