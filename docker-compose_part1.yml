@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+     docker-registry:
+                image:  infracloudio/csvserver:latest
+                container_name: infracloudio-csvserver
+                ports:
+                        - "9393:9300"
+                restart: always
+                volumes:
+                        - /home/roopesh/solution/solution/inputFile:/csvserver/inputdata:ro
+
+                environment:
+                          CSVSERVER_BORDER: Orange
